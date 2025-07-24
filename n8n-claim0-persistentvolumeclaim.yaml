@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   labels:
     service: n8n-claim0
-  name: n8n-claim0
+  name: n8n-pvc
   namespace: n8n
 spec:
   accessModes:
