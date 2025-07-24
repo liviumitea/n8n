@@ -24,6 +24,9 @@ spec:
           volumeMounts:
             - name: n8n-pvc
               mountPath: /data
+          env:
+            - name: N8N_SECURE_COOKIE
+              value: "false"
       containers:
         - command:
             - /bin/sh
