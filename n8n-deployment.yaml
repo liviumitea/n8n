@@ -64,12 +64,12 @@ spec:
               memory: "500Mi"
           volumeMounts:
             - mountPath: /home/node/.n8n
-              name: n8n-claim0
+              name: n8n-pvc
       restartPolicy: Always
       volumes:
-        - name: n8n-claim0
+        - name: n8n-pvc
           persistentVolumeClaim:
-            claimName: n8n-claim0
+            claimName: n8n-pvc
         - name: n8n-secret
           secret:
             secretName: n8n-secret
